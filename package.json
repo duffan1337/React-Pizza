@@ -78,15 +78,13 @@
     "workbox-webpack-plugin": "5.1.4",
     "yarn": "^1.22.11"
   },
-
-  "proxy":"http://localhost:3001",
-
-
+  "proxy": "http://localhost:3001",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "server": "npx json-server --watch public/db.json --port=3001"
+    "server": "node server.js",
+    "json-server": "npx json-server --watch public/db.json --port=3001"
   },
   "eslintConfig": {
     "extends": [
@@ -162,4 +160,3 @@
     ]
   }
 }
-
